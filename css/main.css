@@ -115,6 +115,7 @@ body {
 .navi-list li {
     display: flex;
     align-items: center;
+    transition: 1s;
 }
 
 .navi-list-el {
@@ -124,6 +125,13 @@ body {
     list-style: none;
     text-decoration: none;
     color: #ededf4;
+    transition: 1s;
+}
+.inactive{
+    cursor: default;
+}
+.navi-list-el::after{
+    transition: 0.8s ease-out;
 }
 .navi-list-el:hover::before {
     width: 32px;
